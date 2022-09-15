@@ -24,7 +24,7 @@ def miniMaxSum(arr):
     min_sum = pow(10, 15) # input restriction is 10^9 and this should cover really edgy cases
     for i in range(0, len(arr)):
         arr_copy = deepCopy(arr)
-        # pops one element at a time and compares the
+        # pops one element at a time and compares the sum
         arr_copy.pop(i)
         current_sum = 0
         for n in arr_copy:
